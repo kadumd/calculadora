@@ -18,6 +18,11 @@ const servidor = http.createServer((pedido, resposta) => {
             resposta.writeHead(200, { 'Conten-Type': 'text/javascript' })
             resposta.end(fs.readFileSync("./script.js"))
             break
+
+        case '/teste1.html':
+            resposta.writeHead(200, { 'Conten-Type': 'text/html' })
+            resposta.end(fs.readFileSync("./teste1.html"))
+            break
     }
 })
 
