@@ -11,17 +11,12 @@ const servidor = http.createServer((pedido, resposta) => {
 
         case '/style.css':
             resposta.writeHead(200, { 'Conten-Type': 'text/css' })
-            resposta.end(fs.readFileSync("./style.css"))
+            resposta.end(fs.readFileSync("./frontend/style.css"))
             break
 
         case '/script.js':
             resposta.writeHead(200, { 'Conten-Type': 'text/javascript' })
             resposta.end(fs.readFileSync("./script.js"))
-            break
-
-        case '/teste1.html':
-            resposta.writeHead(200, { 'Conten-Type': 'text/html' })
-            resposta.end(fs.readFileSync("./teste1.html"))
             break
     }
 })
