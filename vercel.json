@@ -2,8 +2,15 @@
     "version": 2,
     "builds": [
         {
-            "src": "frontend/**/*",
+            "src": "API/**/*",
             "use": "@vercel/static"
+        }
+    ],
+    
+    "routes": [
+        {
+            "src": "/",
+            "dest": "/API/index.js"
         }
     ]
 }
