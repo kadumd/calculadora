@@ -8,7 +8,7 @@ function aparecer(e) {
 
     digitados.textContent += pressionado
 }
-
+console.log('Seja que se Deus quiser')
 function operation() {
     const numerosAnteriores = digitados.textContent
     const conta = eval(numerosAnteriores)
